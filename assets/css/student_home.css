@@ -1,0 +1,74 @@
+.side-bar {
+  background-color: #f8f9fa;
+  padding-top: 20px;
+  padding: 5rem 0.5rem 0.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  overflow: hidden;
+}
+
+aside a.nav-link {
+  padding: 0.5rem 1rem;
+  color: #212529;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color color 0.25s ease;
+}
+
+aside a.nav-link:hover,
+aside a.nav-link:focus {
+  text-decoration: none;
+  background-color: #e9ecef;
+}
+aside a.nav-link.active {
+  color: #0d6efd;
+  background-color: #d9d9d9;
+}
+aside a.nav-link.active:hover {
+  background-color: #d0d0d0;
+}
+
+.student-info {
+  display: grid;
+  grid-template-columns: 170px auto;
+}
+.student-name {
+  margin-left: 20px;
+}
+.student-profile-img {
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  img {
+    width: 170px;
+  }
+}
+
+.student-stats {
+  margin-top: 30px;
+  background: #fefefe;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100px);
+  gap: 10px;
+  max-width: 330px;
+  height: 100px;
+  align-items: center;
+
+}
+.student-stat {
+  margin-left: 10px;
+}
+.state-count {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.state-title {
+  font-size: 1.2rem;
+  text-align: center;
+}
