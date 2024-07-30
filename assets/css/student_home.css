@@ -107,6 +107,73 @@ aside a.nav-link.active:hover {
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
+
+.achievement-head {
+  height: 80px;
+  border-radius: 4px;
+  justify-content: center;
+  align-self: center;
+  display: flex;
+  background: #fefefe;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  img {
+    width: 50px;
+  }
+}
 .achievement-card {
-  
+  border: #d3d3d36f 0.05rem solid;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 100px auto;
+}
+
+.achievement-body {
+  display: flex;
+  height: inherit;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h5 {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+  }
+}
+
+.notification-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.teacher-notification {
+  display: grid;
+  grid-template-columns: 65px auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 10px 10px 0 0;
+}
+
+.teacher-notification-img {
+  img {
+    width: 50px;
+  }
+}
+
+.teacher-notification-body {
+  display: flex;
+  justify-content: space-between;
+}
+.teacher-notification-body {
+  span {
+    display: block;
+  }
+  p {
+    display: block;
+  }
+}
+.teacher-notification-body span img {
+  width: 20px;
 }
