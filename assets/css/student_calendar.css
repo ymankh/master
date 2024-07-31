@@ -51,11 +51,27 @@ h1 {
   gap: 10px;
 }
 .calendar-body .calendar-day {
+  height: 90px;
+  background: #fff;
+  border-radius: 4px;
+  padding: 5px;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 30px auto;
   .day-number {
     font-size: 1.5rem;
+    /* width: 1fr; */
+    text-align: left;
   }
-    background: #fff;
-  border-radius: 4px;
-  padding: 10px;
-  text-align: center;
+  .calendar-events {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+}
+.calendar-day-disabled {
+  background: #7a7474 !important;
+}
+.calendar-day-off {
+  background: #5eef87 !important;
 }
