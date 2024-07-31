@@ -1,0 +1,129 @@
+body {
+    background-color: white;
+}
+.header {
+    padding: 20px;
+}
+.content {
+    padding: 40px 0;
+}
+.history {
+    padding: 40px 0;
+    position: relative;
+}
+.history::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #ddd;
+    z-index: 1;
+}
+.history-item {
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+}
+.history-item-left,
+.history-item-right {
+    width: 45%;
+    padding: 20px;
+}
+.history-item-left {
+    float: left;
+    clear: left;
+}
+.history-item-right {
+    float: right;
+    clear: right;
+}
+.history-dot {
+    position: absolute;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background: #333;
+    border-radius: 50%;
+    z-index: 3;
+}
+.history-dot-left {
+    margin-left: -5px;
+}
+.history-dot-right {
+    margin-left: -5px;
+}
+.history-dot::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    margin-top: -8px;
+    margin-left: -8px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    background: white;
+}
+.video-section {
+    padding: 40px 0;
+    text-align: center;
+}
+.video-section img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.team-section {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+}
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.carousel-item .card {
+    height: 400px; /* Set a specific height for the cards */
+    width: 60%;
+}
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+.footer .social-icons i {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #333;
+}
+.footer .contact-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.footer .contact-info i {
+    margin-right: 10px;
+}
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+.footer ul li a {
+    text-decoration: none;
+    color: #333;
+}
+@media screen and (max-width: 768px) {
+    .history-item-left,
+    .history-item-right {
+        float: none;
+        width: 100%;
+    }
+    .history::before {
+        left: 10%;
+    }
+    .history-dot {
+        left: 10%;
+    }
+}
