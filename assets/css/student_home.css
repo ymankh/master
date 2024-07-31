@@ -8,6 +8,7 @@
   overflow: hidden;
 }
 
+
 aside a.nav-link {
   padding: 0.5rem 1rem;
   color: #212529;
@@ -237,5 +238,14 @@ aside a.nav-link.active:hover {
       font-size: 1.2rem;
       width: fit-content;
     }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .notification-side {
+    display: none;
+  }
+  .main-container {
+    grid-template-columns: 1fr;
   }
 }
