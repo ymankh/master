@@ -16,7 +16,14 @@ h1 {
   }
 }
 
+.calendar-container {
+  overflow: auto;
+  padding: 10px;
+  background: #fff;
+}
+
 .calendar {
+  min-width: 900px;
   display: flex;
   flex-direction: column;
   align-items: center;
