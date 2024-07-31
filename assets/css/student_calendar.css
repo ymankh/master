@@ -19,6 +19,7 @@ h1 {
 .calendar-container {
   overflow: auto;
   background: #fff;
+  width: 100%;
 }
 
 .calendar {
