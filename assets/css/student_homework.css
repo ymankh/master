@@ -1,0 +1,56 @@
+.homework-container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #d9d9d9;
+  border-radius: 4px;
+  padding: 10px;
+  gap: 7px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.homework-card {
+  display: grid;
+  grid-template-columns: 150px auto 100px;
+  gap: 10px;
+  background: #fff;
+}
+.homework-card-img {
+  width: 150px;
+  overflow: hidden;
+  img {
+    height: 100px;
+  }
+}
+.homework-card-content {
+  display: flex;
+  flex-direction: column;
+  color: #383a3e;
+  .home-work-duo-to {
+    font-size: 0.8rem;
+  }
+}
+
+.submit-button {
+  background: #171a1f;
+  border-radius: 4px;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.2s ease-in-out color, background;
+  display: inline-block;
+  border: #171a1f00 solid 1px;
+  width: fit-content;
+  height: fit-content;
+}
+.submit-button:hover {
+  background: #ffffff00;
+  color: #171a1f;
+  border: #383a3e solid 1px;
+}
+.submit-homework {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
